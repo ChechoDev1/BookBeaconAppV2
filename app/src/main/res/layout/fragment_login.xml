@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvBookeacon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="BookBeacon"
+        android:layout_marginTop="30dp"
+        style="@style/Titulo"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <ImageView
+        android:id="@+id/ivLoginLogo"
+        android:layout_width="@dimen/width_logo"
+        android:layout_height="@dimen/heigh_logo"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logodefinitivo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvBookeacon" />
+
+    <EditText
+        android:id="@+id/etLoginEmail"
+        style="@style/Prueba"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_default"
+        android:drawableStart="@drawable/vector_person"
+        android:drawableTint="@color/colorPrimary"
+        android:hint="@string/email"
+        android:maxLines="1"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLoginLogo" />
+
+    <EditText
+        android:id="@+id/etPasswordUsername"
+        style="@style/Prueba"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_default"
+        android:drawableStart="@drawable/vector_candado"
+        android:drawableTint="@color/colorPrimary"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLoginEmail" />
+
+
+    <Button
+        android:id="@+id/btBotonLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_default"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/button_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordUsername" />
+
+    <TextView
+        android:id="@+id/tvTexto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_default"
+        android:text="¿No tienes cuenta?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btBotonLogin" />
+
+    <Button
+        android:id="@+id/btRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_default"
+        android:text="Crea una gratis!"
+        android:textColor="@color/colorPrimary"
+        android:backgroundTint="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTexto1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.projectbookbeaconv2.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment1"
+            app:destination="@id/registerFragment1" />
+        <action
+            android:id="@+id/action_loginFragment_to_navigationFragment"
+            app:destination="@id/navigationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment1"
+        android:name="com.example.projectbookbeaconv2.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register_1">
+        <action
+            android:id="@+id/action_registerFragment1_to_registerFragment2"
+            app:destination="@id/registerFragment2" />
+        <action
+            android:id="@+id/action_registerFragment1_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment2"
+        android:name="com.example.projectbookbeaconv2.RegisterFragment2"
+        android:label="RegisterFragment2"
+        tools:layout="@layout/fragment_register_2">
+        <argument
+            android:name="nombre"
+            app:argType="string" />
+        <argument android:name="correo" />
+        <action
+            android:id="@+id/action_registerFragment2_to_registerFragment3"
+            app:destination="@id/registerFragment3" />
+        <action
+            android:id="@+id/action_registerFragment2_to_registerFragment1"
+            app:destination="@id/registerFragment1" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment3"
+        android:name="com.example.projectbookbeaconv2.RegisterFragment3"
+        android:label="fragment_register_3"
+        tools:layout="@layout/fragment_register_3" >
+        <argument
+            android:name="nombre"
+            app:argType="string" />
+        <argument android:name="correo" />
+        <argument android:name="usuario" />
+        <argument android:name="contrasena" />
+        <action
+            android:id="@+id/action_registerFragment3_to_navigationFragment"
+            app:destination="@id/navigationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationFragment"
+        android:name="com.example.projectbookbeaconv2.NavigationFragment"
+        android:label="fragment_navigation"
+        tools:layout="@layout/fragment_navigation" >
+        <action
+            android:id="@+id/action_navigationFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_navigationFragment_to_bookFragment"
+            app:destination="@id/bookFragment" />
+        <action
+            android:id="@+id/action_navigationFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.projectbookbeaconv2.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/bookFragment"
+        android:name="com.example.projectbookbeaconv2.BookFragment"
+        android:label="fragment_book"
+        tools:layout="@layout/fragment_book" >
+        <action
+            android:id="@+id/action_bookFragment_to_navigationFragment"
+            app:destination="@id/navigationFragment" />
+        <action
+            android:id="@+id/action_bookFragment_to_genresFragment"
+            app:destination="@id/genresFragment" />
+        <action
+            android:id="@+id/action_bookFragment_to_authorsFragment"
+            app:destination="@id/authorsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.projectbookbeaconv2.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_navigationFragment"
+            app:destination="@id/navigationFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/genresFragment"
+        android:name="com.example.projectbookbeaconv2.GenresFragment"
+        android:label="GenresFragment"
+        tools:layout="@layout/fragment_genres">
+        <action
+            android:id="@+id/action_genresFragment_to_bookFragment"
+            app:destination="@id/bookFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/authorsFragment"
+        android:name="com.example.projectbookbeaconv2.AuthorsFragment"
+        android:label="fragment_authors"
+        tools:layout="@layout/fragment_authors" >
+
+        <action
+            android:id="@+id/action_authorsFragment_to_bookFragment"
+            app:destination="@id/bookFragment" />
+    </fragment>
+</navigation>

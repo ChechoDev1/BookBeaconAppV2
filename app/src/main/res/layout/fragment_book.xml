@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BookFragment">
+
+    <ImageButton
+        android:id="@+id/imgBack3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vector_back"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/logoMatch"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logodefinitivo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvIngresoDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa tus preferencias oprimiento los botones"
+        app:layout_constraintTop_toBottomOf="@+id/logoMatch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btAutores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Autores"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/tvIngresoDatos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btGeneros"
+        />
+
+    <Button
+        android:id="@+id/btGeneros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generos"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="@id/btAutores"
+        app:layout_constraintStart_toEndOf="@id/btAutores"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerRecomendation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:divider="@drawable/divider_line"
+        android:dividerHeight="1dp"
+        app:layout_constraintStart_toStartOf="@+id/btAutores"
+        app:layout_constraintEnd_toEndOf="@+id/btGeneros"
+        app:layout_constraintTop_toBottomOf="@+id/btAutores"
+        app:layout_constraintBottom_toTopOf="@+id/btGenerarRecomendacion"/>
+
+    <Button
+        android:id="@+id/btGenerarRecomendacion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Generar recomendacion"
+        android:layout_margin="@dimen/margin_default"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

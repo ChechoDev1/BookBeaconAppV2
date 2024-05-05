@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "768363445853",
+    "project_id": "bookbeaconapp",
+    "storage_bucket": "bookbeaconapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768363445853:android:69bc00613eb81af50f17b4",
+        "android_client_info": {
+          "package_name": "com.example.projectbookbeaconv2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvB_sP7yYN8CvsoV5FS5I8FvrfawJ9FZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

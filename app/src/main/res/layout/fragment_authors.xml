@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/imgBack3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_default"
+        android:background="@color/white"
+        android:src="@drawable/vector_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitulo3"
+        style="@style/Titulo"
+        android:layout_width="@dimen/width_title"
+        android:layout_height="@dimen/heigh_title"
+        android:layout_marginTop="20dp"
+        android:text="@string/cuentanos_un_poco_de_ti"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBack3" />
+
+    <TextView
+        android:id="@+id/tvTexto5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/escoge_tus_5_autores_favoritos"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo3" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="280dp"
+        android:layout_height="408dp"
+        android:layout_margin="@dimen/margin_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTexto5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swAut1"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvStephenKing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Stephen King"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toEndOf="@+id/swAut1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgStephenKing"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ficcion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/swAut1" />
+
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swAut2"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="80dp"
+                app:layout_constraintStart_toEndOf="@id/swAut1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvWilliamShakespeare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="William Shakespeare"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toEndOf="@+id/swAut2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgWilliamShakespeare"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/classics"
+                app:layout_constraintStart_toStartOf="@id/swAut2"
+                app:layout_constraintTop_toBottomOf="@+id/swAut2" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swAut3"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgStephenKing" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/tvSwitch3"
+                android:layout_height="wrap_content"
+                android:text="J.R.R. Tolkien"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toEndOf="@+id/swAut3"
+                app:layout_constraintTop_toBottomOf="@id/imgStephenKing" />
+
+            <ImageView
+                android:id="@+id/imgJ.R.R.Tolkien"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/non_fiction"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/swAut3" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swAut4"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="80dp"
+                app:layout_constraintStart_toEndOf="@id/swAut3"
+                app:layout_constraintTop_toBottomOf="@id/imgWilliamShakespeare" />
+
+            <TextView
+                android:id="@+id/tvSandraBrown"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Sandra Brown"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toEndOf="@+id/swAut4"
+                app:layout_constraintTop_toBottomOf="@id/imgWilliamShakespeare" />
+
+            <ImageView
+                android:id="@+id/imgSandraBrown"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/literature"
+                app:layout_constraintStart_toStartOf="@id/swAut4"
+                app:layout_constraintTop_toBottomOf="@+id/swAut4" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swAut5"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgJ.R.R.Tolkien" />
+
+            <TextView
+                android:id="@+id/tvP.G.Wodehouse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="P.G. Wodehouse"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toEndOf="@+id/swAut5"
+                app:layout_constraintTop_toBottomOf="@id/imgJ.R.R.Tolkien" />
+
+            <ImageView
+                android:id="@+id/imgP.G.Wodehouse"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/fantasy"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/swAut5" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swAut6"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="80dp"
+                app:layout_constraintStart_toEndOf="@id/swAut5"
+                app:layout_constraintTop_toBottomOf="@id/imgSandraBrown" />
+
+            <TextView
+                android:id="@+id/tvRoaldDahl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Roald Dahl"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toEndOf="@+id/swAut6"
+                app:layout_constraintTop_toBottomOf="@id/imgSandraBrown" />
+
+            <ImageView
+                android:id="@+id/imgRoaldDahl"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/novels"
+                app:layout_constraintStart_toStartOf="@id/swAut6"
+                app:layout_constraintTop_toBottomOf="@+id/swAut6" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swAut7"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgP.G.Wodehouse" />
+
+            <TextView
+                android:id="@+id/tvOrsonScottCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Orson Scott Card"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toEndOf="@+id/swAut7"
+                app:layout_constraintTop_toBottomOf="@id/imgP.G.Wodehouse" />
+
+            <ImageView
+                android:id="@+id/imgOrsonScottCard"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/historical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/swAut7" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swAut8"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="80dp"
+                app:layout_constraintStart_toEndOf="@id/swAut7"
+                app:layout_constraintTop_toBottomOf="@id/imgRoaldDahl" />
+
+            <TextView
+                android:id="@+id/tvAgathaChristie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Agatha Christie"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toEndOf="@+id/swAut8"
+                app:layout_constraintTop_toBottomOf="@id/imgRoaldDahl" />
+
+            <ImageView
+                android:id="@+id/imgAgathaChristie"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/mistery"
+                app:layout_constraintStart_toStartOf="@id/swAut8"
+                app:layout_constraintTop_toBottomOf="@+id/swAut8" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swAut9"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgOrsonScottCard" />
+
+            <TextView
+                android:id="@+id/tvMercedesLackey"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Mercedes Lackey"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toEndOf="@+id/swAut9"
+                app:layout_constraintTop_toBottomOf="@id/imgOrsonScottCard" />
+
+            <ImageView
+                android:id="@+id/imgMercedesLackey"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/romance"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/swAut9" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swAut10"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="80dp"
+                app:layout_constraintStart_toEndOf="@id/swAut9"
+                app:layout_constraintTop_toBottomOf="@id/imgAgathaChristie" />
+
+            <TextView
+                android:id="@+id/tvJamesPatterson"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="James Patterson"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toEndOf="@+id/swAut10"
+                app:layout_constraintTop_toBottomOf="@id/imgAgathaChristie" />
+
+            <ImageView
+                android:id="@+id/imgJamesPatterson"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/contemporary"
+                app:layout_constraintStart_toStartOf="@id/swAut10"
+                app:layout_constraintTop_toBottomOf="@+id/swAut10" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swAut11"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgMercedesLackey" />
+
+            <TextView
+                android:id="@+id/tvFyodorDostoyevsky"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Fyodor Dostoyevsky"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toEndOf="@+id/swAut11"
+                app:layout_constraintTop_toBottomOf="@id/imgMercedesLackey" />
+
+            <ImageView
+                android:id="@+id/imgFyodorDostoyevsky"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/adventure"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/swAut11" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swAut12"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="80dp"
+                app:layout_constraintStart_toEndOf="@id/swAut11"
+                app:layout_constraintTop_toBottomOf="@id/imgJamesPatterson" />
+
+            <TextView
+                android:id="@+id/tvRumikoTakahashi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Rumiko Takahashi"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toEndOf="@+id/swAut12"
+                app:layout_constraintTop_toBottomOf="@id/imgJamesPatterson" />
+
+            <ImageView
+                android:id="@+id/imgRumikoTakahashi"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/youngadult"
+                app:layout_constraintStart_toStartOf="@id/swAut12"
+                app:layout_constraintTop_toBottomOf="@+id/swAut12" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swAut13"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgFyodorDostoyevsky" />
+
+            <TextView
+                android:id="@+id/tvMargaretWeis"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Margaret Weis"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toEndOf="@+id/swAut13"
+                app:layout_constraintTop_toBottomOf="@id/imgFyodorDostoyevsky" />
+
+            <ImageView
+                android:id="@+id/imgMargaretWeis"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/adult"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/swAut13" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swAut14"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="80dp"
+                app:layout_constraintStart_toEndOf="@id/swAut13"
+                app:layout_constraintTop_toBottomOf="@id/imgRumikoTakahashi" />
+
+            <TextView
+                android:id="@+id/tvGabrielGarcíaMárquez"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Gabriel García Márquez"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toEndOf="@+id/swAut14"
+                app:layout_constraintTop_toBottomOf="@id/imgRumikoTakahashi" />
+
+            <ImageView
+                android:id="@+id/imgGabrielGarcíaMárquez"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/philosophy"
+                app:layout_constraintStart_toStartOf="@id/swAut14"
+                app:layout_constraintTop_toBottomOf="@+id/swAut14" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swAut15"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgMargaretWeis" />
+
+            <TextView
+                android:id="@+id/tvC.S.Lewis"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="C.S. Lewis"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toEndOf="@+id/swAut15"
+                app:layout_constraintTop_toBottomOf="@id/imgMargaretWeis" />
+
+            <ImageView
+                android:id="@+id/imgC.S.Lewis"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/scifi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/swAut15" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swAut16"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="80dp"
+                app:layout_constraintStart_toEndOf="@id/swAut15"
+                app:layout_constraintTop_toBottomOf="@id/imgGabrielGarcíaMárquez" />
+
+            <TextView
+                android:id="@+id/tvTerryPratchett"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Terry Pratchett"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toEndOf="@+id/swAut16"
+                app:layout_constraintTop_toBottomOf="@id/imgGabrielGarcíaMárquez" />
+
+            <ImageView
+                android:id="@+id/imgTerryPratchett"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/childrens"
+                app:layout_constraintStart_toStartOf="@id/swAut16"
+                app:layout_constraintTop_toBottomOf="@+id/swAut16" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swAut17"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgC.S.Lewis" />
+
+            <TextView
+                android:id="@+id/tvNeilGaiman"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Neil Gaiman"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toEndOf="@+id/swAut17"
+                app:layout_constraintTop_toBottomOf="@id/imgC.S.Lewis" />
+
+            <ImageView
+                android:id="@+id/imgHumor"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/humor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/swAut17" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swAut18"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="80dp"
+                app:layout_constraintStart_toEndOf="@id/swAut17"
+                app:layout_constraintTop_toBottomOf="@id/imgTerryPratchett" />
+
+            <TextView
+                android:id="@+id/tvCharlesDickens"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Charles Dickens"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toEndOf="@+id/swAut18"
+                app:layout_constraintTop_toBottomOf="@id/imgTerryPratchett" />
+
+            <ImageView
+                android:id="@+id/imgCharlesDickens"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/thriler"
+                app:layout_constraintStart_toStartOf="@id/swAut18"
+                app:layout_constraintTop_toBottomOf="@+id/swAut18" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btActualizarAutores"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_default"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/actualizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">10sp</dimen>
+    <dimen name="width_logo">213dp</dimen>
+    <dimen name="heigh_logo">170dp</dimen>
+    <dimen name="width_title">218dp</dimen>
+    <dimen name="heigh_title">72dp</dimen>
+    <dimen name="margin_default">15dp</dimen>
+</resources>

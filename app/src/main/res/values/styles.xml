@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Prueba" parent="Base.Theme.ProjectBookBeaconV2" >
+        <item name="android:textSize">16dp</item>
+        <item name="android:drawablePadding">12dp</item>
+    </style>
+
+    <style name="Prueba2" parent="Base.Theme.ProjectBookBeaconV2" >
+        <item name="android:textSize">24dp</item>
+        <item name="android:drawablePadding">12dp</item>
+    </style>
+
+    <style name="Titulo" parent="Base.Theme.ProjectBookBeaconV2">
+        <item name="android:textSize">40dp</item>
+    </style>
+</resources>

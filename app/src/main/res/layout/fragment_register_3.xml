@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegisterFragment3">
+
+    <TextView
+        android:id="@+id/tvTitulo5"
+        style="@style/Titulo"
+        android:layout_width="@dimen/width_title"
+        android:layout_height="@dimen/heigh_title"
+        android:layout_marginTop="50dp"
+        android:text="@string/estas_seguro_de_continuar"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitulo6"
+        style="@style/Titulo"
+        android:layout_width="@dimen/width_title"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="@string/pulsa_el_boton_para_finalizar"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btBotonSiguiente6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/boton_finalizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo6" />
+
+    <ImageView
+        android:id="@+id/ivLoginLogo"
+        android:layout_width="@dimen/width_logo"
+        android:layout_height="@dimen/heigh_logo"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logodefinitivo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btBotonSiguiente6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

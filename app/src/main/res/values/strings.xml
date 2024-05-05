@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">BookBeakon</string>
+    <string name="hint_usuario">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="button_login">Login</string>
+    <string name="button_create">Crear</string>
+    <string name="button_siguiente">Siguiente</string>
+    <string name="hint_email">correo_ejemplo@gmail.com</string>
+    <string name="hint_nombre_completo">Nombre completo</string>
+    <string name="titulo1">Empecemos con lo basico</string>
+    <string name="ya_tienes_una_cuenta">¿Ya tienes una cuenta?</string>
+    <string name="accede">Accede!</string>
+    <string name="como_quieres_acceder">Ingresa tu usuario y contraseña</string>
+    <string name="hint_usuario_registro">Nombre de usuario</string>
+    <string name="cuentanos_un_poco_de_ti">Cuéntanos un poco de ti:</string>
+    <string name="escoge_tus_5_generos_favoritos">Escoge tus 5 generos favoritos:</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rango_paginas">¿Cuál es tu rango de páginas preferido al leer un libro</string>
+    <string name="boton_finalizar">Finalizar</string>
+    <string name="finalizacion">¡Tu perfil ha sido creado!</string>
+    <string name="bienvenida">Bienvenido a Book Beacon</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="email">email</string>
+    <string name="escoge_tus_5_autores_favoritos">Escoge tus 5 autores favoritos</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="estas_seguro_de_continuar">¿Estás seguro de continuar?</string>
+    <string name="pulsa_el_boton_para_finalizar">Pulsa el botón para finalizar para crear tu cuenta</string>
+</resources>
