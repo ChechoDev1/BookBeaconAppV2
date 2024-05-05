@@ -75,7 +75,7 @@
                 android:id="@+id/imgStephenKing"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/ficcion"
+                android:src="@drawable/stephenking"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/swAut1" />
 
@@ -101,7 +101,7 @@
                 android:id="@+id/imgWilliamShakespeare"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/classics"
+                android:src="@drawable/shakespeare"
                 app:layout_constraintStart_toStartOf="@id/swAut2"
                 app:layout_constraintTop_toBottomOf="@+id/swAut2" />
 
@@ -125,7 +125,7 @@
                 android:id="@+id/imgJ.R.R.Tolkien"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/non_fiction"
+                android:src="@drawable/tolkien"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/swAut3" />
 
@@ -150,7 +150,7 @@
                 android:id="@+id/imgSandraBrown"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/literature"
+                android:src="@drawable/sandrabrown"
                 app:layout_constraintStart_toStartOf="@id/swAut4"
                 app:layout_constraintTop_toBottomOf="@+id/swAut4" />
 
@@ -174,7 +174,7 @@
                 android:id="@+id/imgP.G.Wodehouse"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/fantasy"
+                android:src="@drawable/wodehouse"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/swAut5" />
 
@@ -199,7 +199,7 @@
                 android:id="@+id/imgRoaldDahl"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/novels"
+                android:src="@drawable/roalddahl"
                 app:layout_constraintStart_toStartOf="@id/swAut6"
                 app:layout_constraintTop_toBottomOf="@+id/swAut6" />
 
@@ -223,7 +223,7 @@
                 android:id="@+id/imgOrsonScottCard"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/historical"
+                android:src="@drawable/orsonscott"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/swAut7" />
 
@@ -248,7 +248,7 @@
                 android:id="@+id/imgAgathaChristie"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/mistery"
+                android:src="@drawable/agatha"
                 app:layout_constraintStart_toStartOf="@id/swAut8"
                 app:layout_constraintTop_toBottomOf="@+id/swAut8" />
 
@@ -272,7 +272,7 @@
                 android:id="@+id/imgMercedesLackey"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/romance"
+                android:src="@drawable/mercedes"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/swAut9" />
 
@@ -297,7 +297,7 @@
                 android:id="@+id/imgJamesPatterson"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/contemporary"
+                android:src="@drawable/jamespatterson"
                 app:layout_constraintStart_toStartOf="@id/swAut10"
                 app:layout_constraintTop_toBottomOf="@+id/swAut10" />
 
@@ -321,7 +321,7 @@
                 android:id="@+id/imgFyodorDostoyevsky"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/adventure"
+                android:src="@drawable/fyodor"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/swAut11" />
 
@@ -346,7 +346,7 @@
                 android:id="@+id/imgRumikoTakahashi"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/youngadult"
+                android:src="@drawable/rumiko"
                 app:layout_constraintStart_toStartOf="@id/swAut12"
                 app:layout_constraintTop_toBottomOf="@+id/swAut12" />
 
@@ -370,7 +370,7 @@
                 android:id="@+id/imgMargaretWeis"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/adult"
+                android:src="@drawable/margaret"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/swAut13" />
 
@@ -395,7 +395,7 @@
                 android:id="@+id/imgGabrielGarcíaMárquez"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/philosophy"
+                android:src="@drawable/gabo"
                 app:layout_constraintStart_toStartOf="@id/swAut14"
                 app:layout_constraintTop_toBottomOf="@+id/swAut14" />
 
@@ -419,7 +419,7 @@
                 android:id="@+id/imgC.S.Lewis"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/scifi"
+                android:src="@drawable/cslewis"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/swAut15" />
 
@@ -444,7 +444,7 @@
                 android:id="@+id/imgTerryPratchett"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/childrens"
+                android:src="@drawable/terry"
                 app:layout_constraintStart_toStartOf="@id/swAut16"
                 app:layout_constraintTop_toBottomOf="@+id/swAut16" />
 
@@ -468,7 +468,7 @@
                 android:id="@+id/imgHumor"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/humor"
+                android:src="@drawable/neil"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/swAut17" />
 
@@ -493,7 +493,7 @@
                 android:id="@+id/imgCharlesDickens"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/thriler"
+                android:src="@drawable/charles"
                 app:layout_constraintStart_toStartOf="@id/swAut18"
                 app:layout_constraintTop_toBottomOf="@+id/swAut18" />
 

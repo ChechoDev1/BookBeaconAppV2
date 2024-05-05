@@ -48,7 +48,8 @@ android {
 dependencies {
 
     val navVersion = "2.7.7"
-
+    implementation ("com.github.bumptech.glide:glide:4.14.2")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.14.2")
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
     implementation("androidx.navigation:navigation-ui-ktx:$navVersion")
     implementation(platform("com.google.firebase:firebase-bom:33.0.0"))

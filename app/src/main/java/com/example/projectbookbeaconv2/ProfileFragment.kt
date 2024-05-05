@@ -63,6 +63,14 @@ class ProfileFragment : Fragment() {
             findNavController().navigate(ProfileFragmentDirections.actionProfileFragmentToLoginFragment())
         }
 
+        binding.imgEdit.setOnClickListener {
+            findNavController().navigate(ProfileFragmentDirections.actionProfileFragmentToEditFragment())
+        }
+
+        binding.imgBack3.setOnClickListener {
+            findNavController().navigate(ProfileFragmentDirections.actionProfileFragmentToNavigationFragment())
+        }
+
 
         binding.btActualizarLibros.setOnClickListener{
             if (uid != null) {
