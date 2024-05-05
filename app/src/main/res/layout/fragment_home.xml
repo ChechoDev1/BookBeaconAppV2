@@ -46,9 +46,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="33dp"
                 android:layout_marginEnd="16dp"
-                android:background="@drawable/search_button"
+                android:backgroundTint="@color/colorPrimary"
                 android:text="@string/G_Accion"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="12sp" />
 
             <Button
@@ -56,9 +56,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="33dp"
                 android:layout_marginEnd="16dp"
-                android:background="@drawable/search_button"
+                android:backgroundTint="@color/colorPrimary"
                 android:text="@string/G_Aventura"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="12sp" />
 
             <Button
@@ -66,9 +66,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="33dp"
                 android:layout_marginEnd="16dp"
-                android:background="@drawable/search_button"
+                android:backgroundTint="@color/colorPrimary"
                 android:text="@string/G_Thriller"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="12sp" />
 
             <Button
@@ -76,9 +76,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="33dp"
                 android:layout_marginEnd="16dp"
-                android:background="@drawable/search_button"
+                android:backgroundTint="@color/colorPrimary"
                 android:text="@string/G_Drama"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="12sp" />
 
         </LinearLayout>
@@ -102,9 +102,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="33dp"
                 android:layout_marginEnd="16dp"
-                android:background="@drawable/search_button"
+                android:backgroundTint="@color/colorPrimary"
                 android:text="@string/G_Comedia"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="12sp" />
 
             <Button
@@ -112,9 +112,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="33dp"
                 android:layout_marginEnd="16dp"
-                android:background="@drawable/search_button"
+                android:backgroundTint="@color/colorPrimary"
                 android:text="@string/G_Suspenso"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="12sp" />
 
             <Button
@@ -122,9 +122,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="33dp"
                 android:layout_marginEnd="16dp"
-                android:background="@drawable/search_button"
+                android:backgroundTint="@color/colorPrimary"
                 android:text="@string/G_Terror"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="12sp" />
 
             <Button
@@ -132,9 +132,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="33dp"
                 android:layout_marginEnd="16dp"
-                android:background="@drawable/search_button"
+                android:backgroundTint="@color/colorPrimary"
                 android:text="@string/G_Ficcion"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="12sp" />
 
         </LinearLayout>
